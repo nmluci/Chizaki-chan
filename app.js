@@ -57,11 +57,11 @@ if (!debug) {
         masterGuild = client.guilds.cache.find(x => x.id == 370927823948611584).channels.cache.find(x => x.id == 725394117688950815)
     
         process.on("SIGINT", async () => {
-            await masterGuild.send(`[SYS] ${ero.logoff}`)
+            await masterGuild.send(`[SYS] ${tsundere.logoff}`)
             process.exit()
         })
         process.on("SIGTERM", async () => {
-            await masterGuild.send(`[SYS HEROKU] ${ero.logoff}`)
+            await masterGuild.send(`[SYS HEROKU] ${tsundere.logoff}`)
             process.exit()
         })
     
