@@ -4,7 +4,7 @@ const { CommandoClient, Command } = require('discord.js-commando');
 const { tsundere, deredere, slave, ero} = require('./libs/Personality')
 const path = require('path');
 const { readdirSync } = require('fs');
-const { flatMap } = require('lodash');
+const dotenv = require('dotenv')
 const client = new CommandoClient({
     // commandPrefix: 'misaki',
     commandPrefix: 'fyn',
@@ -12,6 +12,7 @@ const client = new CommandoClient({
 })
 
 let masterGuild
+dotenv.config()
 
 client.registry
 .registerDefaultTypes()
@@ -69,8 +70,9 @@ if (!debug) {
 }
 
 try {
-    // client.login(process.env.BOT_TOKEN)
-    client.login('NjY2MjYwNzU5OTY1MDczNDA4.Xhxlrw.NaVMgb8bSDDUpfCBqQFZO9bjvf8')
+    console.log(process.env.BOT_TOKEN)
+    client.login(process.env.BOT_TOKEN)
+    // client.login('')
 } catch(err) {
     console.log(tsundere.misc.replace('KW', 'ERROR'))
     process.exit()

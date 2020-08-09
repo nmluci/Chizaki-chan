@@ -2,7 +2,7 @@ const { tsundere, deredere, slave, ero} = require('../libs/Personality')
 
 module.exports = async (client, msg) => {
     console.log(`It's inside~`)
-    console.log(`Currently establishing a sub-slavery as ${client.user.username}! (${client.user.id})`)
+    console.log(`Currently establishing ${client.guilds.cache.keyArray().length} sub-slavery as ${client.user.username}! (${client.user.id})`)
     client.user.setPresence({
         activity: {
             name: `Vibing`
