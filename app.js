@@ -5,6 +5,9 @@ const { tsundere, deredere, slave, ero} = require('./libs/Personality')
 const path = require('path');
 const { readdirSync } = require('fs');
 const dotenv = require('dotenv')
+const app = require('express')
+const port = 3000
+
 const client = new CommandoClient({
     // commandPrefix: 'misaki',
     commandPrefix: 'fyn',
@@ -13,6 +16,8 @@ const client = new CommandoClient({
 
 let masterGuild
 dotenv.config()
+app.get('/', (req, res) => res.send('Goodbye World!'))
+app.listen(port, () => console.log(`I'm Alive~`))
 
 client.registry
 .registerDefaultTypes()
@@ -70,7 +75,7 @@ if (!debug) {
 }
 
 try {
-    console.log(process.env.BOT_TOKEN)
+    // console.log(process.env.BOT_TOKEN)
     client.login(process.env.BOT_TOKEN)
     // client.login('')
 } catch(err) {
