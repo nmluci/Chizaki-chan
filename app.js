@@ -5,7 +5,7 @@ const { tsundere, deredere, slave, ero} = require('./libs/Personality')
 const path = require('path');
 const { readdirSync } = require('fs');
 const dotenv = require('dotenv')
-const app = require('express')
+const buff = require('express')()
 const port = 3000
 
 const client = new CommandoClient({
@@ -16,8 +16,8 @@ const client = new CommandoClient({
 
 let masterGuild
 dotenv.config()
-app.get('/', (req, res) => res.send('Goodbye World!'))
-app.listen(port, () => console.log(`I'm Alive~`))
+buff.get('/', (req, res) => res.send('Goodbye World!'))
+buff.listen(port, () => console.log(`I'm Alive~`))
 
 client.registry
 .registerDefaultTypes()
