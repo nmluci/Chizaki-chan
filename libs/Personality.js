@@ -53,7 +53,20 @@ ero.gameoflayf = `I heard there's no exhibitionist so meh...`
 ero.praised = [`After you praised me, wanna go to Hotel?`]
 ero.misc = `Hmm.... KW?`
 
+zurai.logon = `Ah... Why I still alive?`
+zurai.logoff = `I think my its about time`
+zurai.loli = `Flat? Ryly?`
+zurai.milf = `Old woman? WTF`
+zurai.dilf = `No interest for old man!`
+zurai.yuri = `I'm fine...`
+zurai.yaoi = `I'm fine...`
+zurai.random = `As a exhibitionist... I'M IN... perhaps`
+zurai.gameoflayf = `I heard there's no exhibitionist so meh...`
+zurai.praised = [`After you praised me, wanna go to Hotel?`]
+zurai.misc = `Hmm.... KW?`
+
 exports.tsundere = tsundere
 exports.deredere = deredere
 exports.slave = slave
 exports.ero = ero
+exports.zurai = zurai
