@@ -7,7 +7,6 @@ module.exports = class MisakiClient extends CommandoClient {
     constructor(options) {
         super(options)
         this.debug = false
-        this.lastchannel = new Collection()
     }
     
     ero = ero
