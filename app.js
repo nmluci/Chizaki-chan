@@ -54,7 +54,7 @@ if (!debug) {
         })
 
         process.on('SIGTERM', async () => {
-            await m_guild.send(`[HEROKU] ${client.slave.logoff}`)
+            await m_guild.send(`[HEROKU] ${client.ero.logoff}`)
             process.exit()
         })
     })
